@@ -14,15 +14,15 @@ Output : 	data/customers_rfm.csv (R, F, M, scores, segment, response)
 
 ### Definitions
 
-Recency	Recency :  days since last purchase (lower is better) 
+Recency :  days since last purchase (lower is better) 
 
-Frequency : 	NumWebPurchases + NumCatalogPurchases + NumStorePurchases (deal purchases are already included in these channels)
+Frequency : NumWebPurchases + NumCatalogPurchases + NumStorePurchases (deal purchases are already included in these channels)
 
-Monetary	Sum of the six Mnt... spending columns over 2 years
+Monetary : Sum of the six Mnt... spending columns over 2 years
 
-Scores	Quintiles from 1 to 5, 5 = best (recency ranking is reversed)
+Scores :	Quintiles from 1 to 5, 5 = best (recency ranking is reversed)
 
-### Interpretation and Recommendations
+### Interpretation 
 
 What the data looks like
 • 2,240 customers were scored, with ≈1.36 million in total two-year spending.
@@ -32,6 +32,7 @@ What the data looks like
 • Spending is skewed to the right: the mean (606) is well above the median (396). The top 20% of customers generate 52.3% of spending. This is concentrated, but less extreme than a classic 80/20 pattern.
 
 • The scoring logic is correct. In the sample rows, 16 days since the last purchase gives R = 5 and 94 days gives R = 1, so recency is reversed as intended. Frequency and monetary scores move together, which is normal in RFM.
+
 
 1. Value sits in three segments. Champions, Loyal Customers and At Risk are 59.7% of customers but 95.4% of spending. The other three segments are 40.3% of customers and only 4.6% of spending.
 
@@ -52,6 +53,7 @@ What the data looks like
 Targeting Champions, Loyal Customers and At Risk reaches about 60% of the base but covers 95% of spending and about three quarters of acceptances (≈253 of 334). Contact volume falls by about 40%, so marketing effort moves to the customers who generate the value.
 The reactivation upside is large. Winning back just 10% of At Risk customers (≈55 people) would secure about 54,000 of two-year spending at their current average level, roughly 4% of total spending. This is an illustration, not a forecast.
 
+### Recommendations
 
 #### 1
 At Risk
@@ -80,13 +82,13 @@ Cost per acceptance
 
 
 ### Limitations and data checks
-• Relative segments. Quintiles split customers against each other, not against an absolute standard. By construction, 40% of customers fall into the two lowest recency quintiles, which is exactly At Risk (24.4%) plus Hibernating (15.6%). Use the purchase-cycle argument above, not the segment size alone, to judge how serious the risk is.
+• Relative segments : Quintiles split customers against each other, not against an absolute standard. By construction, 40% of customers fall into the two lowest recency quintiles, which is exactly At Risk (24.4%) plus Hibernating (15.6%). Use the purchase-cycle argument above, not the segment size alone, to judge how serious the risk is.
 
 • Response rates are not true conversion rates. The denominator is all customers, and we do not know who was contacted. Acceptance is also not revenue.
 
-• Frequency definition. Discount purchases are assumed to be already counted in the web, catalog and store channels. The 6 customers with Frequency = 0 but Monetary > 0 suggest checking this: look at their NumDealsPurchases. The impact is negligible (0.3% of customers).
+• Frequency definition : Discount purchases are assumed to be already counted in the web, catalog and store channels. The 6 customers with Frequency = 0 but Monetary > 0 suggest checking this: look at their NumDealsPurchases. The impact is negligible (0.3% of customers).
 
-• Income outlier. The maximum income (666,666) looks like a data-entry error and can distort the average income of one segment. 
+• Income outlier : The maximum income (666,666) looks like a data-entry error and can distort the average income of one segment. 
 
-• Correlation, not causation. Income, recency and response move together, but this analysis does not prove what drives what.
+• Correlation not causation : Income, recency and response move together, but this analysis does not prove what drives what.
    
