@@ -56,27 +56,27 @@ The reactivation upside is large. Winning back just 10% of At Risk customers (â‰
 ### Recommendations
 
 #### 1
-At Risk
+At Risk : 
 Launch a personalised win-back journey, triggered when a customer passes about 60 days without a purchase. Use offers tied to their favourite categories. Give the top spenders in this segment a personal touch.
 Reactivation rate (purchase within 30 days), recovered spend, response vs the 12.3% baseline
 #### 2
-Champions
+Champions : 
 Protect them with a VIP programme, early access and premium bundles. Avoid blanket discounts: they already buy without them.
 Recency kept below about 30 days, spend per customer, retention
 #### 3
-Loyal Customers
+Loyal Customers : 
 Build upsell and cross-sell offers (bundles, loyalty tiers, other categories) to close the spending gap with Champions.
 Share moving up to Champions, average spend
 #### 4
-Promising
+Promising : 
 Run a low-cost nurture sequence: welcome emails, basket-building offers, free-shipping thresholds. Cap discount budgets, since income is low.
 Purchases per customer, conversion to Loyal
 #### 5
-Need Attention
+Need Attention : 
 Send an automated, low-cost reminder to stop them sliding into Hibernating (their recency is already 49 days).
 Share staying active after the reminder
 #### 6
-Hibernating
+Hibernating : 
 Spend as little as possible: one last low-cost email, then exclude them from costly channels and promotions.
 Cost per acceptance
 
